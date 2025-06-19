@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}About | Ajeet Singh{% endblock %}
+{% block content %}
+<div class="row align-items-center" data-aos="fade-right">
+    <div class="col-md-4 text-center mb-3 mb-md-0">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Ajeet Singh" class="img-fluid rounded-circle shadow" style="max-width: 200px;">
+    </div>
+    <div class="col-md-8">
+        <h2>About Me</h2>
+        <p>Motivated MCA student with strong skills in Java, Python, and web development. Knowledgeable in cybersecurity and SDLC. Quick learner with problem-solving abilities and a passion for building practical tech solutions.</p>
+        <ul class="list-unstyled">
+            <li><strong>Email:</strong> ajeet.singh@email.com</li>
+            <li><strong>Phone:</strong> +91-9876543210</li>
+            <li><strong>Location:</strong> Kota, Rajasthan, India</li>
+        </ul>
+    </div>
+</div>
+{% endblock %} 

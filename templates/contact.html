@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}Contact | Ajeet Singh{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-md-6" data-aos="fade-right">
+        <h2>Contact Me</h2>
+        <form method="POST" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <div class="mb-3">
+                {{ form.name.label(class="form-label") }}
+                {{ form.name(class="form-control") }}
+            </div>
+            <div class="mb-3">
+                {{ form.email.label(class="form-label") }}
+                {{ form.email(class="form-control") }}
+            </div>
+            <div class="mb-3">
+                {{ form.message.label(class="form-label") }}
+                {{ form.message(class="form-control", rows=4) }}
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <a href="{{ url_for('static', filename='resume.pdf') }}" class="btn btn-outline-secondary ms-2" download>Download Resume</a>
+        </form>
+    </div>
+    <div class="col-md-6" data-aos="fade-left">
+        <h4>Get in Touch</h4>
+        <ul class="list-unstyled">
+            <li><strong>Email:</strong> ajeet.singh@email.com</li>
+            <li><strong>Phone:</strong> +91-9876543210</li>
+            <li><strong>Location:</strong> Kota, Rajasthan, India</li>
+        </ul>
+        <div class="mt-3">
+            <a href="https://linkedin.com/in/ajeetsingh" class="btn btn-outline-primary me-2" target="_blank">LinkedIn</a>
+            <a href="https://github.com/ajeetsingh" class="btn btn-outline-dark" target="_blank">GitHub</a>
+        </div>
+    </div>
+</div>
+{% endblock %} 

@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% block title %}Home | Ajeet Singh{% endblock %}
+{% block content %}
+<!-- Hero Section -->
+<div class="hero-section position-relative d-flex align-items-center justify-content-center" style="min-height: 70vh; background: linear-gradient(135deg, #0d6efd 60%, #6c757d 100%);" data-aos="fade-up">
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.45); z-index:1;"></div>
+    <div class="text-center position-relative" style="z-index:2;">
+        <h1 class="display-3 fw-bold animate__animated animate__fadeInDown" style="color: #fff;">Ajeet Singh</h1>
+        <h2 class="mb-4 animate__animated animate__fadeInUp" style="color: #fff;">Aspiring Full Stack Developer | Java & Python Enthusiast | Cybersecurity Learner</h2>
+        <a href="{{ url_for('static', filename='resume.pdf') }}" class="btn btn-light btn-lg me-2" download>Download Resume</a>
+        <a href="#contact-info" class="btn btn-outline-light btn-lg">Hire Me</a>
+    </div>
+</div>
+
+<!-- About Me -->
+<div class="row align-items-center my-5" data-aos="fade-right">
+    <div class="col-md-3 text-center mb-3 mb-md-0">
+        <img src="{{ url_for('static', filename='images/profile.jpeg') }}" alt="Ajeet Singh" class="img-fluid rounded-circle shadow" style="max-width: 150px;">
+    </div>
+    <div class="col-md-9">
+        <div class="card p-4 h-100">
+            <h3 class="section-title"><i class="bi bi-person-circle"></i> About Me</h3>
+            <p>Motivated MCA student with strong skills in Java, Python, and web development. Knowledgeable in cybersecurity and SDLC. Quick learner with problem-solving abilities and a passion for building practical tech solutions.</p>
+            <ul class="list-unstyled">
+                <li><strong>Email:</strong> ajeetsing169@gmai.com</li>
+                <li><strong>Phone:</strong> +91-6367231278</li>
+                <li><strong>Location:</strong> Bharatpur, Rajasthan, India</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Experience Section -->
+<div class="my-5" data-aos="fade-up">
+    <div class="card p-4">
+        <h3 class="section-title"><i class="bi bi-briefcase"></i> Experience</h3>
+        <div>
+            <h5 class="card-title">Full Stack Developer</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Codec Technologies Pvt Ltd &middot; Part-time &middot; Remote</h6>
+            <p class="mb-1"><strong>Jan 2025 to May 2025 &middot; 5 months</strong></p>
+            <p class="mb-2">LinkedIn helped me get this job</p>
+            <p class="card-text">
+                I am a dedicated Full Stack Developer skilled in Java, Python, HTML, CSS, JavaScript, and Bootstrap. With strong knowledge of both frontend and backend development, I create responsive, secure, and user-friendly web applications. I'm currently pursuing MCA and passionate about building real-world tech solutions with a focus on problem-solving and clean code.<br>
+                <span class="text-muted">Skills: HTML, CSS, JavaScript, Bootstrap, Java, Python, Web Development, Frontend, Backend, Problem Solving, Clean Code</span>
+            </p>
+            <a href="{{ url_for('static', filename='AJEET SINGH - Certificate (2).pdf') }}" class="btn btn-outline-success" download>View Internship Certificate</a>
+            <span class="ms-2 text-success">Internship Completed</span>
+        </div>
+    </div>
+</div>
+
+<!-- Skills Overview -->
+<div class="my-5" data-aos="fade-up">
+    <div class="card p-4">
+        <h3 class="section-title"><i class="bi bi-bar-chart-steps"></i> Skills</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="mb-3"><i class="bi bi-window"></i> Frontend</h5>
+                <h6><i class="bi bi-filetype-html text-danger"></i> HTML</h6>
+                <div class="progress mb-2"><div class="progress-bar bg-info" style="width: 90%">90%</div></div>
+                <h6><i class="bi bi-filetype-css text-primary"></i> CSS</h6>
+                <div class="progress mb-2"><div class="progress-bar bg-warning" style="width: 85%">85%</div></div>
+                <h6><i class="bi bi-filetype-js text-warning"></i> JavaScript</h6>
+                <div class="progress mb-2"><div class="progress-bar bg-danger" style="width: 75%">75%</div></div>
+            </div>
+            <div class="col-md-6">
+                <h5 class="mb-3"><i class="bi bi-hdd-network"></i> Backend</h5>
+                <h6><i class="bi bi-cup-hot text-primary"></i> Java</h6>
+                <div class="progress mb-2"><div class="progress-bar bg-primary" style="width: 85%">85%</div></div>
+                <h6><i class="bi bi-cpu text-success"></i> Python</h6>
+                <div class="progress mb-2"><div class="progress-bar bg-success" style="width: 80%">80%</div></div>
+                <h6><i class="bi bi-shield-lock text-secondary"></i> Cybersecurity Fundamentals</h6>
+                <div class="progress mb-2"><div class="progress-bar bg-secondary" style="width: 70%">70%</div></div>
+                <h6><i class="bi bi-diagram-3 text-dark"></i> SDLC</h6>
+                <div class="progress mb-2"><div class="progress-bar bg-dark" style="width: 75%">75%</div></div>
+                <h6><i class="bi bi-bug text-success"></i> Debugging</h6>
+                <div class="progress mb-2"><div class="progress-bar bg-success" style="width: 80%">80%</div></div>
+                <h6><i class="bi bi-lightbulb text-primary"></i> Problem Solving</h6>
+                <div class="progress mb-2"><div class="progress-bar bg-primary" style="width: 85%">85%</div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Education -->
+<div class="my-5" data-aos="fade-right">
+    <div class="card p-4">
+        <h3 class="section-title"><i class="bi bi-mortarboard"></i> Education</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">MCA</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">University of Kota</h6>
+                        <p class="card-text">2024–Present</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">B.Sc.</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Maharaja Murajmal Brij University, Bharatpur</h6>
+                        <p class="card-text">2021–2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Projects -->
+<div class="my-5" data-aos="fade-up">
+    <div class="card p-4">
+        <h3 class="section-title"><i class="bi bi-kanban"></i> Projects</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Resume Builder Web Application</h5>
+                        <p class="card-text">Developed a responsive resume builder using HTML and CSS with an intuitive user interface for creating customized resumes.</p>
+                        <a href="#" class="btn btn-primary me-2">Live Demo</a>
+                        <a href="https://github.com/ajeet100603/resume-builder" class="btn btn-outline-dark" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </div>
+</div>
+
+<!-- Certifications -->
+<div class="my-5" data-aos="fade-right">
+    <div class="card p-4">
+        <h3 class="section-title"><i class="bi bi-award"></i> Certifications</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cybersecurity Course – Tech Mahindra Foundation <span class="text-muted">(May 2025)</span></li>
+            <li class="list-group-item">Prompt Engineering & AI Workshop – University of Kota <span class="text-muted">(Aug 2024)</span></li>
+            <li class="list-group-item">RSCIT Certificate – VMOU, Kota <span class="text-muted">(2021)</span></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Contact Info -->
+<div class="my-5" id="contact-info" data-aos="fade-up">
+    <div class="card p-4">
+        <h3 class="section-title"><i class="bi bi-envelope-at"></i> Contact</h3>
+        <ul class="list-unstyled">
+            <li><strong>Email:</strong> ajeetsing169@gmai.com</li>
+            <li><strong>Phone:</strong> +91-6367231278</li>
+            <li><strong>Location:</strong> Bharatpur, Rajasthan, India</li>
+        </ul>
+        <div class="mt-3">
+            <a href="https://linkedin.com/in/ajeetsingh" class="btn btn-outline-primary me-2" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/ajeet100603" class="btn btn-outline-dark" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+            <a href="{{ url_for('static', filename='resume.pdf') }}" class="btn btn-outline-secondary ms-2" download><i class="bi bi-file-earmark-pdf"></i> Download Resume</a>
+        </div>
+    </div>
+</div>
+{% endblock %} 
